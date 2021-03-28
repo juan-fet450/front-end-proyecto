@@ -1,0 +1,58 @@
+<html>
+<head>
+    <title>Registro y juega</title>
+    <meta charset="UTF-8" />
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/solar/bootstrap.css" />
+</head>
+<body>
+    <div id="datos">
+        <div>
+            <div class="form-group">
+                <Label for="nombre">Nick:</Label>
+                <input type="email" class="form-control" id="nickname" aria-describedby="emailHelp"
+                    placeholder="Enter nick">
+            </div>
+            <div class="form-group">
+                <Label for="edad">Edad:</Label>
+                <input type="email" class="form-control" id="edad" aria-describedby="emailHelp" placeholder="Enter age">
+            </div>
+            <div class="form-group">
+                <Label for="sexo">Sexo:</Label>
+                <input type="email" class="form-control" id="genero" aria-describedby="emailHelp"
+                    placeholder="Enter gender">
+            </div>
+            <div class="form-group">
+                <button type="button" class="btn btn-success" onclick="ocultarElemntos()" id="enviar">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="juego" style="display: none;">
+        <div id="app">
+            <img class="marker" src="marker.png" />
+            <img class="wheel" src="wheel.png" />
+            <img class="button" src="button.png" />
+        </div>
+        <!--edicion-->
+        <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+            <div class="card-header" id="nombrejugador">Header</div>
+            <div class="card-body">
+                <h4 class="card-title" id="puntjugador">Puntaje</h4>
+                <p class="card-text" id="respjugador">Respuestas correctas</p>
+            </div>
+            <!--fin-->
+        </div>
+</body>
+<footer>
+    <script src="scriptDatos.js"></script>
+    <script src="script.js"></script>
+    <style type="text/css">
+        body {
+            background: rgb(148, 212, 252) !important;
+        }
+    </style>
+</footer>
+
+</html>
